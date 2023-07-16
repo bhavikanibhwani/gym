@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Best Gym | amangym.com</title>
+    <link rel="stylesheet" href="cssindex.css">
+    
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="./image/gymlogo.png" alt="">
+            
+        </div>
+        
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#lifestyle">Lifestyle</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="registration.html">Membership</a></li>
+            </ul>
+        </div>
+
+        <!-- Right box for buttons -->
+        <div class="right">
+            <img id="icon" src="./svgicon/moon.svg" alt="">
+        </div>
+    </header>
+
+    <section id="home">
+        <h1 class="h-primary">Welcome to Anytime Fitness </h1>
+        <p>Fitness is not about being better than someone else, it’s about being better than you used to be. </p>
+        <p>No pain , no gain , shut up and train.</p>
+    </section>
+
+    <section id="equipment-container">
+        <h1 class="h-primary center">Equipment</h1>
+        <div id="equipment">
+            <div class="box box1">
+                <h2 class="h-secondary center">Treadmill</h2> 
+            </div>
+            <div class="box box2"> 
+                <h2 class="h-secondary center">Bicep & Tricep Equipment</h2>
+            </div>
+            <div class="box box3">
+                <h2 class="h-secondary center">Free Weight</h2>
+            </div>
+            <div class="box box4">
+                <h2 class="h-secondary center">Chest Exercise Equipment</h2>
+            </div>
+            <div class="box box5">
+                <h2 class="h-secondary center">Back Exercise Equipment</h2>
+            </div>
+            <div class="box box6">
+                <h2 class="h-secondary center">Legs Exercise Equipment</h2>
+            </div>
+        </div>    
+    <section>  
+           
+
+    <section id="lifestyle-container">
+        <h1 class="h-primary center">Lifestyle</h1>
+            <div id="lifestyle">
+                <div class="lbox box7">
+                    <h2 class="h-secondary center">Personal Training</h2> 
+                </div>
+                <div class="lbox box8"> 
+                     <h2 class="h-secondary center">Cardio Classes</h2>
+                </div>
+                <div class="lbox box9">
+                    <h2 class="h-secondary center">Yoga Classes</h2>
+                </div>
+                <div class="lbox box10">
+                    <h2 class="h-secondary center">Zumba Classes</h2>
+                </div>
+                       
+            </div>
+    </section>
+
+    
+    <section id="whyjoinus">
+        <h1 class="h-primary center">Why Join Us?</h1>
+        <div class="why">
+            <img class="image" src="./image/whyjoinus.PNG" alt="image not found">
+        </div>
+    </section>
+    
+    <section id="member">
+        <h1 class="h-primary center">Member Benefits</h1>
+         <div class="member-container">
+             <div class="member-box">
+                 <h3>GYM OPEN 24/7 </h3>
+                 <p>Anytime Fitness is always open 24/7, close to work and home and provides an exceptional workout at an exceptional price!</p>
+             </div>
+             <div class="member-box">
+                <h3>PERSONAL TRAINERS</h3>
+                <p>Our Personal Trainers ensure you perform exercises safely while giving you the best results. No matter what your fitness needs one of our friendly Personal Trainers will keep you challenged and motivated.</p>
+            </div>
+            <div class="member-box">
+                <h3>PRIVATE RESTROOMS</h3>
+                <p>Anytime fitness is here with a solution, we make sure that all our members get the best restrooms and shower facilities!</p>
+            </div>
+            <div  class="member-box">
+                <h3>WORKOUTS APP</h3>
+                 <p>Anytime WorkoutsTM is our revolutionary app, available exclusively to Anytime Fitness members. As a bonus to your membership, extra support is available at the touch of a button with over 3,500 workouts.</p>
+            </div>
+
+         </div>
+    </section>
+    
+    
+    <footer>
+        <div class="box-container">
+
+            <div class="box">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate minima soluta distinctio eaque magni veritatis dicta dolore dignissimos totam quis!</p>
+            </div>
+    
+            <div class="box">
+                <h3>Locations</h3>
+                <a href="#">India</a>
+                <a href="#">USA</a>
+                <a href="#">France</a>
+                <a href="#">Russia</a>
+                <a href="#">Japan</a>
+            </div>
+    
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="#home">Home</a>
+                <a href="#equipment">Equipment</a>
+                <a href="#lifystyle">Lifestyle</a>
+                <a href="#whyjoinus">Why join us?</a>
+                <a href="./registration.html">Member Benefits</a>
+                
+            </div>
+    
+            <div class="box">
+                <h3>Follow us</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">linkedin</a>
+                <a href="#">Youtube</a>
+            </div>
+            
+    
+        </div>
+        
+    </footer>
+    <h1 class="credit"> Created by Bhavika Nibhwani &copy; copyright @ 2023 </h1>
+ 
+</body>
+<script>
+var icon = document.getElementById("icon");
+
+icon.onclick = function(){
+  document.body.classList.toggle("dark-theme");
+  if(document.body.classList.contains("dark-theme")){
+    icon.src = "./svgicon/sun.svg";
+  }else{
+    icon.src = "./svgicon/moon.svg";
+
+  }
+}
+</script>
+
+</html>

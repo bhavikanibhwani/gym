@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Rancho&family=Zen+Tokyo+Zoo&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.main{
+    display: flex;
+    background-color: black;
+}
+
+.submitmsg{
+    margin: 10px;
+    color: black; 
+    background-color: rgb(159, 226, 96);
+}
+.left{
+    width: 10%;
+}
+.left img{
+    width: 100%;
+    margin: 0%;
+}
+
+
+.mainp{
+    padding: 40px 40px;
+    color:burlywood;
+    font-size: 3rem;
+    font-family: 'Zen Tokyo Zoo', cursive;
+}
+
+.mid{
+    text-align: center;
+    
+}
+
+.club{
+    background-color: black;
+    margin-top: 20px;
+}
+
+.club>h1,.club>h2{
+    color:chocolate;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:800;
+    background-color: blanchedalmond;
+}
+
+.club>p{
+    font-size: 1.3rem;
+    font-weight: 600;
+    /* font-family:'Niconne', cursive; */
+    color:white;
+    text-align: center;
+    padding: 20px 150px;
+}
+/* contact form */
+#contact{
+    margin-top: 20px;
+    position: relative;  
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('./image/contactus.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+   
+    
+    
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    
+} 
+
+#contact-box form{
+    width: 50%;
+}
+
+#contact-box label{
+    background-color: black;
+    padding: 2px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color:white;
+   font-size: 1.5rem;
+   font-family: 'Bree Serif', serif;
+
+}
+.form-group1{
+    text-align: center;
+}
+
+#contact h1{
+    padding: 10px;
+    font-size: 2rem;
+    text-align: center;
+    color: chartreuse;
+    background-color: black;
+}
+
+
+/* button section */
+.btn {
+    font-family:serif;
+    font-weight: 600;
+    margin: 0px 5px;
+    background-color:rgb(188, 209, 93);
+    color:black;
+    padding: 4px 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(216, 215, 243);
+    color:black;
+}

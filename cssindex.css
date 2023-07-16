@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+.left {
+    display: inline-block;
+    /* border: 2px solid red; */
+    position: absolute;
+    left: 2px;
+    top: 0px;
+}
+
+.left img {
+    width: 80px;
+    filter: invert(100%);
+}
+
+
+.dark-theme{
+    background-color: black;
+}
+
+.mid {
+    display: block;
+    width: 50%;
+    margin: 20px auto;
+    /* border: 2px solid green; */
+}
+
+.right {
+    width: auto;
+    position: relative;
+    right: 50px;
+    top: 5px;
+    display: inline-block;
+    /* border: 2px solid yellow; */
+}
+header{
+        background-color: black;
+        opacity: 0.9;
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0px;
+    
+    
+}
+.navbar {
+    display: inline-block;
+}
+
+.navbar li {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 4px 23px;
+
+}
+.navbar li img{
+    color: white;
+    text-decoration: none;
+    padding: 4px 23px;
+
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    text-decoration: underline;
+    color:black;
+    background-color:rgb(188, 209, 93);
+
+}
+
+.btn {
+    font-family:serif;
+    font-weight: 600;
+    margin: 0px 5px;
+    background-color:rgb(188, 209, 93);
+    color:black;
+    padding: 4px 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(216, 215, 243);
+    color:black;
+}
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('./image/gymmain2.jpg') no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#home h1{
+    color:rgb(188, 209, 93);
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: 'Bree Serif', serif;
+    
+}
+/* Services Section */
+#equipment,#lifestyle{
+    margin: 34px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#equipment .box{
+    margin: 10px;
+    width: 50vh;
+    height: 50vh;
+    
+}
+.box h2{
+    color: white;
+    padding-top: 44vh;
+    font-size: 3vh;
+    
+}
+.box1{
+    background: url('./image/tredmil.jpg') no-repeat center center/cover;
+    transition: all 0.2s linear;
+}
+.box1:hover{
+    width:53vh;
+    height: 53vh;
+
+}
+.box2{
+    background: url('./image/biceptricep2.jpg') no-repeat center center/cover;
+    transition: all 0.2s linear;
+    
+}
+.box2:hover{
+    width:53vh;
+    height: 53vh;
+}
+
+.box3{
+    background: url('./image/freeweight1.jpg') no-repeat center center/cover;
+    transition: all 0.2s linear;
+}
+.box3:hover{
+    width:53vh;
+    height: 53vh;
+}
+
+.box4{
+    background: url('./image/benchpress.jpg') no-repeat center center/cover;
+    transition: all 0.2s linear;
+}
+.box4:hover{
+    width:53vh;
+    height: 53vh;
+}
+
+.box5{
+   background: url('./image/backexercise.jpg') no-repeat center center/cover;
+   transition: all 0.2s linear;
+}
+.box5:hover{
+    width:53vh;
+    height: 53vh;
+}
+.box6{
+   background: url('./image/curlextension.jpg') no-repeat center center/cover;
+   transition: all 0.2s linear;
+}
+.box6:hover{
+    width:53vh;
+    height: 53vh;
+}
+
+.lbox{
+    margin: 17px;
+    width: 40vh;
+    height: 40vh;
+    
+    
+}
+
+#lifestyle h2{
+    font-size: 4vh;
+    padding-top: 0;
+}
+
+.box7{
+    background: url('./image/personaltrainer.jpg') no-repeat center center/cover;
+}
+.box8{
+    background: url('./image/cardio.jpg') no-repeat center center/cover;
+}
+.box9{
+    background: url('./image/yoga.jpg') no-repeat center center/cover;
+}
+.box10{
+    background: url('./image/zumba.jpg') no-repeat center center/cover;
+}
+
+
+
+/* why join us */
+
+.image{
+    width: 96%;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+    margin: 10px;
+    color:rgb(188, 209, 93) ;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+
+
+.center{
+    text-align: center;
+}
+/*member benifts*/
+#member{
+    padding-bottom: 50px;
+    
+}
+
+.member-box{
+    padding: 20px;
+    width: 20%;
+    height: 18rem;
+}
+.member-box:hover{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    background-color: rgb(179, 195, 236);
+}
+
+.member-container{
+    display: flex;
+    /* background-color:black; */
+    padding: 50px;
+    margin: 0%;
+    
+}
+div h3{
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+    font-size: 25px;
+    color:green;
+    
+    
+}
+
+div p{
+    color:rgb(188, 209, 93);
+    text-align: center;
+    font-size: 20px;
+}
+
+
+/* footer section */
+footer{
+    
+    background: black;
+    color: white;
+    padding: 2px 10px;
+
+}
+footer{
+    display: flex;
+}
+footer .box-container{
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+
+footer .box-container .box{
+    
+    margin:2rem;
+    width: 19%;
+    height: 90%;
+}
+
+footer .box-container .box h3{
+    font-size: 2.5rem;
+    color:green;
+    padding:1rem 0;
+    text-align: center;
+}
+
+footer .box-container .box p{
+    font-size: 1.2rem;
+    color:white;
+    padding:.5rem 0;
+    text-align: center;
+}
+
+footer .box-container .box a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: center;
+    color:white;
+    padding:.5rem 0;
+    display: block;
+}
+footer .box-container .box img{
+    color: white;
+}
+
+footer .box-container .box a:hover{
+    text-decoration: underline;
+    color:rgb(2, 211, 248);
+}
+
+.credit{
+    background-color: black;
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    padding:1.5rem 1rem;
+    color:white;
+}
